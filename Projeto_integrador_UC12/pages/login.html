@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrar | CompraFácil</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <!-- Conteúdo principal da página -->
+    <main class="login-screen">
+
+        <!-- Container do login -->
+        <section class="login-container">
+
+            <!-- Logo e identidade -->
+            <header class="login-brand">
+
+                <h1>Compra<span>Fácil</span></h1>
+                <p>Seu mercado, do seu jeito.</p>
+                
+            </header>
+
+            <!-- Boas-vindas -->
+            <div class="login-welcome">
+                <h2>Olá, que bom ter você por aqui!</h2>
+                <p>Entre na sua conta e aproveite uma experiência de compras mais prática.</p>
+            </div>
+
+            <!-- Formulário de login -->
+            <form class="login-form" id="form-login">
+
+                <!-- Campo de e-mail -->
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- Campo de senha -->
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="toggle-senha"
+                            class="toggle-password"
+                            aria-label="Mostrar senha"
+                        >
+                            Mostrar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recuperação de senha -->
+                <a href="#" class="forgot-password" id="recuperar-senha">
+                    Esqueceu sua senha?
+                </a>
+
+                <!-- Botão de login -->
+                <button type="submit" class="login-button">
+                    Entrar
+                </button>
+
+                <!-- Mensagens do formulário -->
+                <p id="login-message" role="status"></p>
+
+            </form>
+
+            <!-- Acesso ao cadastro -->
+            <footer class="login-register">
+                <p>Não tem uma conta?</p>
+                <a href="cadastro.html">Criar minha conta</a>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript do login -->
+    <script src="../js/login.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/* =========================================
+   COMPRAFÁCIL - SPLASH SCREEN
+========================================= */
+
+
+/* TELA DE ABERTURA */
+
+.splash-screen {
+    min-height: 100vh;
+    width: 100%;
+
+    background: var(--azul);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    color: var(--branco);
+}
+
+
+/* DETALHE DECORATIVO DO FUNDO */
+
+.splash-screen::before {
+    content: "";
+
+    width: 320px;
+    height: 320px;
+
+    position: absolute;
+    top: -120px;
+    right: -120px;
+
+    border-radius: 50%;
+    background: rgba(85, 198, 83, 0.06);
+}
+
+
+.splash-screen::after {
+    content: "";
+
+    width: 280px;
+    height: 280px;
+
+    position: absolute;
+    bottom: -120px;
+    left: -100px;
+
+    border-radius: 50%;
+    background: rgba(255, 217, 40, 0.04);
+}
+
+
+/* CONTEÚDO CENTRAL */
+
+.splash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 1;
+
+    animation: splash-entrada 1s ease forwards;
+}
+
+
+/* LOGO */
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.logo-icon {
+    width: 100px;
+    height: 100px;
+
+    color: var(--branco);
+
+    animation: logo-flutuar 3s ease-in-out infinite;
+}
+
+
+/* NOME DO APP */
+
+.logo-name {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+
+.logo-name span {
+    color: var(--verde);
+}
+
+
+/* SLOGAN */
+
+.splash-slogan {
+    margin-top: 12px;
+
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+
+    letter-spacing: 0.5px;
+}
+
+
+/* CARREGAMENTO */
+
+.splash-loading {
+    margin-top: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.loading-track {
+    width: 180px;
+    height: 5px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.loading-progress {
+    width: 40%;
+    height: 100%;
+
+    background: var(--verde);
+
+    border-radius: 20px;
+
+    animation: loading-animacao 1.8s ease-in-out infinite;
+}
+
+
+.splash-loading p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* RODAPÉ */
+
+.splash-footer {
+    position: absolute;
+    bottom: 28px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.35);
+}
+
+
+/* ANIMAÇÕES */
+
+
+/* Entrada do conteúdo */
+
+@keyframes splash-entrada {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Movimento suave da logo */
+
+@keyframes logo-flutuar {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+}
+
+
+/* Animação do carregamento */
+
+@keyframes loading-animacao {
+
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(250%);
+    }
+
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 480px) {
+
+    .logo-icon {
+        width: 85px;
+        height: 85px;
+    }
+
+    .logo-name {
+        font-size: 36px;
+    }
+
+    .splash-slogan {
+        font-size: 14px;
+    }
+
+}
