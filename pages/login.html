@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrar | CompraFácil</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    
+    <main class="login-screen">
+
+        <section class="login-container">
+
+    
+            <header class="login-brand">
+
+                <h1>Compra<span>Fácil</span></h1>
+                <p>Seu mercado, do seu jeito.</p>
+                
+            </header>
+
+    
+            <div class="login-welcome">
+                <h2>Olá, que bom ter você por aqui!</h2>
+                <p>Entre na sua conta e aproveite uma experiência de compras mais prática.</p>
+            </div>
+
+            
+            <form class="login-form" id="form-login">
+
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="toggle-senha"
+                            class="toggle-password"
+                            aria-label="Mostrar senha"
+                        >
+                            Mostrar
+                        </button>
+                    </div>
+                </div>
+
+               <a href="recuperar_senha.html" class="forgot-password">
+                    Esqueceu sua senha?
+               </a>
+
+                <!-- Botão de login -->
+                <button type="submit" class="login-button">
+                    Entrar
+                </button>
+
+                
+                <p id="login-message" role="status"></p>
+
+            </form>
+
+            
+            <footer class="login-register">
+                <p>Não tem uma conta?</p>
+                <a href="cadastro.html">Criar minha conta</a>
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/login.js" defer></script>
+
+</body>
+
+</html>

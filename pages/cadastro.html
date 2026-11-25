@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nome da página -->
+    <title>Criar Conta | CompraFácil</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+
+    <!-- Área principal da tela -->
+    <main class="cadastro-screen">
+
+        <section class="cadastro-container">
+
+            <!-- Logo e identidade do aplicativo -->
+            <header class="cadastro-brand">
+
+                <h1>Compra<span>Fácil</span></h1>
+
+                <p>Seu mercado, do seu jeito.</p>
+
+            </header>
+
+        
+            <div class="cadastro-welcome">
+
+                <h2>Crie sua conta</h2>
+
+                <p>
+                    Cadastre-se e tenha uma experiência de compras
+                    mais prática e completa.
+                </p>
+
+            </div>
+
+            
+            <form id="form-cadastro" class="cadastro-form">
+
+                <div class="form-group">
+
+                    <label for="nome">Nome completo</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+                <!-- Campo E-mail -->
+                <div class="form-group">
+
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <!-- Campo Senha -->
+                <div class="form-group">
+
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Crie uma senha"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+                <!-- Campo Confirmar Senha -->
+                <div class="form-group">
+
+                    <label for="confirmar-senha">Confirmar senha</label>
+
+                    <input
+                        type="password"
+                        id="confirmar-senha"
+                        name="confirmar-senha"
+                        placeholder="Digite sua senha novamente"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+                <!-- Local para mensagens de validação -->
+                <p id="cadastro-message" role="status"></p>
+
+                <!-- Botão de cadastro -->
+                <button type="submit" class="cadastro-button">
+                    Criar minha conta
+                </button>
+
+            </form>
+
+            <!-- Link para voltar ao login -->
+            <footer class="cadastro-footer">
+
+                <p>
+                    Já tem uma conta?
+                    <a href="login.html">Entrar</a>
+                </p>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+    <!-- Importa o JavaScript do cadastro -->
+    <script src="../js/cadastro.js" defer></script>
+
+</body>
+
+</html>

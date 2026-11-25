@@ -1,0 +1,87 @@
+/* =========================================
+   COMPRAFÁCIL - ESTILOS GLOBAIS
+========================================= */
+
+
+/* 1. VARIÁVEIS DO PROJETO */
+
+/* permite criar variáveis globais que podem ser utilizadas em outros arquivos CSS. */
+:root {
+
+    /* Cores principais */
+    --azul: #1D2854;
+    --verde: #55C653;
+    --amarelo: #FFD928;
+
+    /* Cores neutras */
+    --branco: #FFFFFF;
+    --cinza-claro: #F5F7FA;
+    --cinza: #E5E7EB;
+    --cinza-texto: #6B7280;
+    --preto: #222222;
+
+    /* Tipografia */
+    --fonte-principal: Arial, sans-serif;
+
+}
+
+
+/* 2. RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* facilita o controle das dimensões dos elementos. */
+    box-sizing: border-box;
+}
+
+
+/* 3. CONFIGURAÇÕES GERAIS DO DOCUMENTO */
+
+html {
+    /* deixa a rolagem de navegação suave. */
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /* garante que o corpo da página tenha, no mínimo, a altura da tela. */
+    min-height: 100vh;
+    font-family: var(--fonte-principal);
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+}
+
+
+/* 4. ELEMENTOS QUE HERDAM A FONTE */
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* 5. IMAGENS */
+
+img {
+
+    max-width: 100%;
+    display: block;
+}
+
+
+/* 6. BOTÕES */
+
+button {
+    cursor: pointer;
+}
+
+
+/* 7. LINKS */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/recuperar_senha.css">
+
+     <title>Recuperar Senha | CompraFácil</title>
+
+</head>
+
+<body>
+
+    <!-- Conteúdo principal -->
+    <main class="recovery-screen">
+
+        <!-- Card de recuperação -->
+        <section class="recovery-container">
+
+            <!-- Identidade -->
+            <header class="recovery-brand">
+                <h1>Compra<span>Fácil</span></h1>
+                <p>Seu mercado, do seu jeito.</p>
+            </header>
+
+            <!-- Ícone ilustrativo -->
+            <div class="recovery-icon">
+                ✉
+            </div>
+
+            <!-- Título e explicação -->
+            <div class="recovery-welcome">
+                <h2>Esqueceu sua senha?</h2>
+
+                <p>
+                    Não se preocupe! Informe seu e-mail cadastrado
+                    para continuar com a recuperação da sua conta.
+                </p>
+            </div>
+
+            <!-- Formulário -->
+            <form id="form-recuperacao" class="recovery-form">
+
+                <!-- Campo de e-mail -->
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail cadastrado"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- Botão -->
+                <button type="submit" class="recovery-button">
+                    Continuar
+                </button>
+
+                <!-- Mensagem -->
+                <p id="recovery-message" role="status"></p>
+
+            </form>
+
+            <!-- Voltar para o Login -->
+            <footer class="recovery-footer">
+                <a href="login.html">← Voltar para o Login</a>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript da recuperação -->
+    <script src="../js/recuperar_senha.js" defer></script>
+
+</body>
+
+</html>
