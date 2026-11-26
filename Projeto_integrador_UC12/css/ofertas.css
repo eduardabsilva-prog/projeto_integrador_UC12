@@ -1,0 +1,141 @@
+
+/* ==========================================
+   BANNER PROMOCIONAL
+========================================== */
+
+.ofertas-banner {
+    width: 100%;
+    min-height: 280px;
+    padding: 35px 40px;
+
+    background: linear-gradient(
+        120deg,
+        #172653,
+        #243B72
+    );
+
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* TEXTOS DO BANNER */
+
+.banner-texto {
+    max-width: 480px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-etiqueta {
+    display: inline-block;
+
+    background-color: #2FA653;
+    color: #FFFFFF;
+
+    padding: 8px 14px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.banner-texto h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 1.2;
+
+    margin: 18px 0 12px;
+}
+
+.banner-texto p {
+    color: #E0E6F2;
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+
+/* BOTÃO DO BANNER */
+
+.banner-botao {
+    display: inline-block;
+
+    background-color: #2FA653;
+    color: #FFFFFF;
+
+    padding: 12px 22px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.banner-botao:hover {
+    background-color: #248640;
+    transform: translateY(-2px);
+}
+
+
+/* ILUSTRAÇÃO */
+
+.banner-ilustracao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    font-size: 75px;
+
+    transform: rotate(-5deg);
+}
+
+.banner-fruta,
+.banner-sacola,
+.banner-legumes {
+    display: inline-block;
+}
+
+
+/* ==========================================
+   RESPONSIVIDADE - MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .ofertas-banner {
+        min-height: auto;
+        padding: 28px 22px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .banner-texto h2 {
+        font-size: 28px;
+    }
+
+    .banner-texto p {
+        font-size: 14px;
+    }
+
+    .banner-ilustracao {
+        align-self: center;
+        font-size: 55px;
+        gap: 5px;
+    }
+
+}

@@ -1,0 +1,225 @@
+
+/* 
+   COMPRAFÁCIL - TELA DE CADASTRO */
+
+/* Fundo e alinhamento da tela */
+.cadastro-screen {
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #f1f5f4, #e9ecf8);
+}
+
+/* Card principal */
+.cadastro-container {
+    width: 100%;
+    max-width: 480px;
+
+    background-color: #ffffff;
+
+    padding: 40px;
+    border-radius: 28px;
+
+    box-shadow: 0 15px 40px rgba(25, 35, 70, 0.10);
+
+    animation: cadastro-entrada 0.6s ease;
+}
+
+/* Logo */
+.cadastro-brand {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cadastro-brand h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #252653;
+}
+
+.cadastro-brand h1 span {
+    color: #5bbd55;
+}
+
+.cadastro-brand p {
+    font-size: 13px;
+    color: #777b96;
+    margin-top: 5px;
+}
+
+/* Apresentação */
+.cadastro-welcome {
+    margin-bottom: 25px;
+}
+
+.cadastro-welcome h2 {
+    font-size: 23px;
+    color: #252653;
+    margin-bottom: 10px;
+}
+
+.cadastro-welcome p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #777b96;
+}
+
+/* Formulário */
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Grupo de cada campo */
+.cadastro-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Labels */
+.cadastro-form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #252653;
+}
+
+/* Campos de entrada */
+.cadastro-form input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #dce1ef;
+    border-radius: 13px;
+
+    background-color: #f7f8fc;
+
+    font-size: 14px;
+    color: #252653;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Placeholder */
+.cadastro-form input::placeholder {
+    color: #a0a5bc;
+}
+
+/* Efeito ao clicar no campo */
+.cadastro-form input:focus {
+    border-color: #5bbd55;
+    background-color: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(91, 189, 85, 0.12);
+}
+
+/* Mensagem de retorno */
+#cadastro-message {
+    font-size: 13px;
+    text-align: center;
+    color: #9c4747;
+}
+
+/* Botão de cadastro */
+.cadastro-button {
+    width: 100%;
+    height: 54px;
+
+    border: none;
+    border-radius: 14px;
+
+    background-color: #252653;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Efeito do botão ao passar o mouse */
+.cadastro-button:hover {
+    background-color: #34356d;
+    transform: translateY(-2px);
+}
+
+/* Rodapé */
+.cadastro-footer {
+    margin-top: 28px;
+    padding-top: 22px;
+
+    border-top: 1px solid #e9ebf2;
+
+    text-align: center;
+}
+
+.cadastro-footer p {
+    font-size: 14px;
+    color: #8589a2;
+}
+
+.cadastro-footer a {
+    color: #55b64e;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.cadastro-footer a:hover {
+    color: #358d32;
+}
+
+/* Animação de entrada */
+@keyframes cadastro-entrada {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 
+   RESPONSIVIDADE - CELULARES  */
+
+@media (max-width: 480px) {
+
+    .cadastro-screen {
+        padding: 20px 15px;
+        align-items: flex-start;
+    }
+
+    .cadastro-container {
+        padding: 28px 22px;
+        border-radius: 22px;
+    }
+
+    .cadastro-brand h1 {
+        font-size: 32px;
+    }
+
+    .cadastro-welcome h2 {
+        font-size: 21px;
+    }
+
+    .cadastro-form {
+        gap: 15px;
+    }
+}
