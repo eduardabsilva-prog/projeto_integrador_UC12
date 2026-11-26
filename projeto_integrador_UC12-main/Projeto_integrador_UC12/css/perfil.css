@@ -1,0 +1,41 @@
+/* ================================= */
+/* FOTO DE PERFIL - ESTILO */
+/* ================================= */
+
+.foto-perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Foto exibida no perfil */
+.foto-perfil-container img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+}
+
+/* Esconde o campo original */
+.foto-perfil-container input {
+    display: none;
+}
+
+/* Botão de alterar foto */
+.foto-perfil-container label {
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: #e5e5e5;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
