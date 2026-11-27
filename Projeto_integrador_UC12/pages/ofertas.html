@@ -1,15 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <title>CompraFácil | Ofertas</title>
+    <title>Ofertas | CompraFácil</title>
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/ofertas.css">
@@ -18,127 +15,203 @@
 
 <body>
 
-    <!-- 
-         PÁGINA DE OFERTAS - COMPRAFÁCIL
-    -->
+    <!-- CABEÇALHO DA PÁGINA DE OFERTAS -->
+    <header class="cabecalho-ofertas">
 
-    <main class="pagina-ofertas">
-
-        <header class="ofertas-header">
-            
-            <a href="home.html" class="ofertas-logo">
-                <img src="../assets/logo-comprafacil.png" alt="CompraFácil">
-            </a>
-
-            
-            <div class="ofertas-pesquisa">
-
-                <input
-                    type="search"
-                    id="pesquisa-ofertas"
-                    placeholder="Buscar ofertas e produtos..."
-                >
-
-                <button type="button" aria-label="Pesquisar">
-                    🔍
-                </button>
-
-            </div>
-
-            <!-- Área do usuário -->
-            <a href="#perfil" class="ofertas-perfil">
-                👤 Minha conta
-            </a>
-
-        </header>
-
-
-        <!-- CONTEÚDO PRINCIPAL -->
-        <section class="ofertas-conteudo">
-
-            <!-- TÍTULO -->
-            <div class="ofertas-titulo">
-
-                <span class="ofertas-subtitulo">
-                    ECONOMIZE NA SUA COMPRA
-                </span>
-
-                <h1>Ofertas especiais</h1>
-
-                <p>
-                    Confira os produtos com preços especiais
-                    e aproveite para economizar.
-                </p>
-
-            </div>
-
-
-            <!-- BANNER PROMOCIONAL -->
-            <section class="ofertas-banner">
-
-                <!-- O banner será desenvolvido na próxima etapa -->
-
-            </section>
-
-
-            <!-- CATEGORIAS -->
-            <section class="ofertas-categorias">
-
-                <h2>Explore as ofertas</h2>
-
-                <!-- Os filtros serão adicionados posteriormente -->
-
-            </section>
-
-
-            <!-- PRODUTOS EM OFERTA -->
-            
-<!-- BANNER PROMOCIONAL -->
-<section class="ofertas-banner">
-
-    <!-- Textos promocionais -->
-    <div class="banner-texto">
-
-        <span class="banner-etiqueta">
-            OFERTAS DA SEMANA
-        </span>
-
-        <h2>
-            Economize mais<br>
-            na sua compra!
-        </h2>
-
-        <p>
-            Produtos selecionados com preços especiais
-            para você aproveitar.
-        </p>
-
-        <a href="#lista-ofertas" class="banner-botao">
-            Ver ofertas
+        <!-- LOGO -->
+        <a href="home.html" class="logo-ofertas">
+            <img src="../assets/images/logoo.png" alt="CompraFácil">
         </a>
 
-    </div>
+        <!-- BARRA DE PESQUISA -->
+        <div class="busca-ofertas">
 
-    <!-- Ilustração decorativa -->
-    <div class="banner-ilustracao" aria-hidden="true">
+            <input
+                type="search"
+                id="pesquisa-ofertas"
+                placeholder="Buscar produtos..."
+            >
 
-        <span class="banner-fruta">🍎</span>
-        <span class="banner-sacola">🛍️</span>
-        <span class="banner-legumes">🥦</span>
+            <button type="button" aria-label="Pesquisar">
+                🔍
+            </button>
+
+        </div>
+
+        <!-- ÁREA DO USUÁRIO -->
+        <div class="acoes-ofertas">
+
+            <a href="login.html" class="conta-ofertas">
+                <span>👤</span>
+                <span>Minha conta</span>
+            </a>
+
+            <a href="#" class="carrinho-ofertas">
+                <span>🛒</span>
+                <span>Carrinho</span>
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ==========================================
+     CATEGORIAS DE PRODUTOS
+========================================== -->
+
+<section class="categorias-ofertas">
+
+    <div class="lista-categorias">
+
+        <!-- HORTIFRUTI -->
+        <a href="#" class="categoria-item">
+            <div class="categoria-icone"></div>
+            <span>Hortifruti</span>
+        </a>
+
+        <!-- LATICÍNIOS -->
+        <a href="#" class="categoria-item">
+            <div class="categoria-icone"></div>
+            <span>Laticínios</span>
+        </a>
+
+        <!-- CARNES -->
+        <a href="#" class="categoria-item">
+            <div class="categoria-icone"></div>
+            <span>Carnes</span>
+        </a>
+
+        <!-- BEBIDAS -->
+        <a href="#" class="categoria-item">
+            <div class="categoria-icone"></div>
+            <span>Bebidas</span>
+        </a>
+
+        <!-- MERCEARIA -->
+        <a href="#" class="categoria-item">
+            <div class="categoria-icone"></div>
+            <span>Mercearia</span>
+        </a>
+
+        <!-- DOCES -->
+        <a href="#" class="categoria-item">
+            <div class="categoria-icone"></div>
+            <span>Doces e sobremesas</span>
+        </a>
 
     </div>
 
 </section>
 
+    <!-- BANNER PROMOCIONAL -->
+    <section class="banner-ofertas">
+
+    <img 
+        src="../assets/images/banner-ofertas.png" 
+        alt="Ofertas CompraFácil: economize mais nas suas compras"
+    >
+
+</section>
+
+
+    </div>
+
+</section>
+
+<section class="ofertas">
+
+
+            <h2>Ofertas em destaque</h2>
+
+
+            <div class="lista-produtos">
+
+
+                <article class="produto">
+                    <img src="../img/nescau.webp" alt="Achocolatado Nescau">
+                    <p>Achocolatado em pó</p>
+                    <span class="preco">R$ 8,61</span>
+                    <span class="preco-antigo">R$ 12,49</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                     <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="../img/arroz.jpg" alt="Arroz">
+                    <p>Arroz Sepé</p>
+                    <span class="preco">R$ 16,70</span>
+                    <span class="preco-antigo">R$ 21,98</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="../img/fralda.webp" alt="Fralda">
+                    <p>Fralda Huggies</p>
+                    <span class="preco">R$ 48,99</span>
+                    <span class="preco-antigo">R$ 56,90</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="../img/cafe.jpg" alt="Pó de café">
+                    <p>Pó de Café</p>
+                    <span class="preco">R$ 16,50</span>
+                    <span class="preco-antigo">R$ 19,98</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="../img/acquissima.png" alt="Água mineral">
+                    <p>Água Mineral</p>
+                    <span class="preco">R$ 20,58</span>
+                    <span class="preco-antigo">R$ 25,73</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+
+            </div>
+
 
         </section>
 
-    </main>
+    </div>
 
+</section>
 
-    <!-- JavaScript da página -->
-    <script src="../js/ofertas.js" defer></script>
+    
 
 </body>
-
 </html>
