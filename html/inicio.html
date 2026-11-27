@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        <!-- NOME DO USUÁRIO NO TOPO -->
+    <p id="nomeUsuarioTopo">Usuário</p>
+
+    <!-- BARRA LATERAL -->
+    <aside class="barra-lateral">
+
+        <div class="logo">
+            <img src="../img/unnamed.png" alt="Logo CompraFácil">
+        </div>
+
+        <nav class="menu-barralateral">
+
+            <a href="inicio.html" class="item">
+                <img src="../img/home.png" alt="">
+                <p>Início</p>
+            </a>
+
+            <a href="cashback.html" class="item">
+                <img src="../img/cashback.png" alt="">
+                <p>Cashback</p>
+            </a>
+
+            <a href="notinhas.html" class="item">
+                <img src="../img/notinha.png" alt="">
+                <p>Notinhas</p>
+            </a>
+
+            <a href="perfil.html" class="item">
+                <img src="../img/perfil.png" alt="">
+                <p>Perfil</p>
+            </a>
+
+            <a href="configuracoes.html" class="item">
+                <img src="../img/ajustes.png" alt="">
+                <p>Configurações</p>
+            </a>
+
+            <a href="ajuda.html" class="item">
+                <img src="../img/ajuda.png" alt="">
+                <p>Ajuda</p>
+            </a>
+
+        </nav>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="conteudo">
+
+        <!-- CABEÇALHO -->
+        <header class="topo">
+
+            <!-- BARRA DE PESQUISA DE PRODUTOS -->
+            <div class="barra-pesquisa">
+
+                <input
+                    type="text"
+                    id="buscaProdutos"
+                    placeholder="Buscar produtos..."
+                >
+
+            </div>
+
+            <div class="acoes-topo">
+
+                <a href="#" class="icone-topo">
+                    <img src="../img/shopping_cart_30dp_172B4D_FILL0_wght400_GRAD0_opsz24.png" alt="Carrinho">
+                </a>
+
+                <a href="#" class="icone-topo">
+                    <img src="../img/notifications_30dp_172B4D_FILL0_wght400_GRAD0_opsz24.png" alt="Notificações">
+                </a>
+
+           <a href="perfil.html" class="icone-topo">
+                <img id="fotoPerfilTopo" src="../img/account_circle_30dp_172B4D_FILL0_wght400_GRAD0_opsz24 (1).png" alt="Foto de perfil">
+            </a>
+
+                <div class="usuario">
+                    <span>Olá, Luiza</span>
+                    <small>Plano Gold</small>
+                </div>
+
+            </div>
+        </header>
+
+
+
+<!-- BANNER E CARDS -->
+<section class="dashboard">
+
+    <!-- ÁREA PRINCIPAL -->
+    <div class="area-principal">
+
+        <!-- BANNER -->
+        <div class="card-principal">
+            <div class="banner">
+                <img src="../img/image 1.png" alt="Ofertas da semana">
+            </div>
+        </div>
+
+        
+        <div class="area-atalhos">
+
+            <!-- CARD INDEPENDENTE -->
+            <div class="card-atalhos"></div>
+
+            <!-- ATALHOS INDEPENDENTES -->
+            <div class="atalhos">
+
+                <a href="notinhas.html" class="atalho">
+                    <img src="../img/notinha.escurog.png" alt="">
+                    <p>Notinhas</p>
+                </a>
+
+                <a href="cashback.html" class="atalho">
+                    <img src="../img/cashback.escurog.png" alt="">
+                    <p>Cashback</p>
+                </a>
+
+                <a href="perfil.html" class="atalho">
+                    <img src="../img/perfil.escurog.png" alt="">
+                    <p>Perfil</p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- CARDS SECUNDÁRIOS -->
+    <div class="card-secundarios">
+
+        <div class="card-secundario">
+            <h3>Caixas disponíveis em tempo real</h3>
+
+            <div class="numero-caixas">
+                <span>12</span>
+                <p>caixas abertos</p>
+            </div>
+        </div>
+
+        <div class="card-secundario">
+            <h3>Lotação da loja</h3>
+            <p class="lotacao">Moderado</p>
+            <p class="porcentagem">57% de lotação</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+    <!-- OFERTAS EM DESTAQUE -->
+     <section class="ofertas">
+
+        <h2>Ofertas em destaque</h2>
+
+        <div class="lista-produtos">
+
+            <article class="produto">
+                <img src="../img/nescau.webp" alt="Achocolatado Nescau">
+                <p>Achocolatado em pó</p>
+                <span class="preco">R$ 8,61</span>
+                <span class="preco-antigo">R$ 12,49</span>
+                <p class="descricao">
+                     Produto de excelente qualidade, ideal para o seu dia a dia...
+                </p>
+                <a href="descricao-produto.html" class="ler-mais">
+                     Ler mais
+                </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+                <article class="produto">
+                    <img src="../img/arroz.jpg" alt="Arroz">
+                    <p>Arroz Sepé</p>
+                    <span class="preco">R$ 16,70</span>
+                    <span class="preco-antigo">R$ 21,98</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+                <article class="produto">
+                    <img src="../img/fralda.webp" alt="Fralda">
+                    <p>Fralda Huggies</p>
+                    <span class="preco">R$ 48,99</span>
+                    <span class="preco-antigo">R$ 56,90</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+                <article class="produto">
+                    <img src="../img/cafe.jpg" alt="Pó de café">
+                    <p>Pó de Café</p>
+                    <span class="preco">R$ 16,50</span>
+                    <span class="preco-antigo">R$ 19,98</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+                <article class="produto">
+                    <img src="../img/acquissima.png" alt="Água mineral">
+                    <p>Água Mineral</p>
+                    <span class="preco">R$ 20,58</span>
+                    <span class="preco-antigo">R$ 25,73</span>
+                    <p class="descricao">
+                        Produto de excelente qualidade, ideal para o seu dia a dia...
+                    </p>
+                    <a href="descricao-produto.html" class="ler-mais">
+                        Ler mais
+                    </a>
+                    <a href="#" class="btn-comprar">Comprar agora</a>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
