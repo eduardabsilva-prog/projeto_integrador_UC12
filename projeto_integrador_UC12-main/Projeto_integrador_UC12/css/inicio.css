@@ -1,0 +1,210 @@
+/* =====================================
+   BANNER E CARDS
+===================================== */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(190px, 1fr);
+    gap: 10px;
+    align-items: start;
+    width: 100%;
+}
+
+.card-principal {
+    width: 100%;
+    min-width: 0;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* =====================================
+   ATALHOS
+===================================== */
+
+.atalhos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    margin-top: 12px;
+    transform: translateX(-110px);
+}
+
+.atalho {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 4px;
+    text-decoration: none;
+    color: #17213d;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.atalho img {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    object-fit: contain;
+}
+
+.atalho p {
+    font-size: 12px;
+}
+
+.atalho:hover {
+    background-color: #f4f6fa;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   CARDS SECUNDÁRIOS
+===================================== */
+
+.card-secundarios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+}
+
+.card-secundario {
+    width: 100%;
+    min-height: 155px;
+    padding: 15px;
+    background-color: #e5e5e5;
+    border: 1px solid #d5d5d5;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(23, 33, 61, 0.08);
+}
+
+/* CARD DE CAIXAS DISPONÍVEIS */
+
+.card-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numero-caixas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.numero-caixas span {
+    font-size: 48px;
+    font-weight: 500;
+    color: #309E4C;
+}
+
+.numero-caixas p {
+    font-size: 16px;
+    margin: 0;
+    margin-top: -10px;
+    color: #309E4C;
+}
+
+.card-secundario h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #17213d;
+}
+
+
+.card-secundario .lotacao {
+    margin-top: 5px;
+    color: #45a34c;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.card-secundario .porcentagem {
+    margin-top: 0;
+    color: #45a34c;
+    font-size: 20px;
+}
+
+
+/* =====================================
+   OFERTAS EM DESTAQUE
+===================================== */
+
+.ofertas {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.ofertas h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #17213d;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    width: 100%;
+}
+
+.produto {
+    min-width: 0;
+    min-height: 250px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+.produto img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.produto p,
+.produto span {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #17213d;
+}
+
+.produto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(23, 33, 61, 0.12);
+}

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/perfil.css"
+</head>
+
+<body>
+
+    <!-- CONTEÚDO DA PÁGINA DE PERFIL -->
+    <main class="pagina-perfil">
+
+        <!-- CARD COM AS INFORMAÇÕES DO USUÁRIO -->
+        <section class="card-informacoes">
+
+            <!-- FOTO DE PERFIL -->
+            <div class="foto-perfil-container">
+                <img id="previewFoto" src="../img/perfil.png" alt="Foto de perfil">
+
+                <label for="inputFoto">Alterar foto</label>
+
+                <input
+                    type="file"
+                    id="inputFoto"
+                    accept="image/*"
+                >
+            </div>
+
+            <!-- DADOS DO USUÁRIO -->
+            <div class="dados-usuario">
+
+                <!-- NOME EDITÁVEL -->
+                <input
+                    type="text"
+                    id="inputNome"
+                    placeholder="Digite seu nome"
+                >
+
+                <p>+55 27 1720-0440</p>
+                <p>luiza.schneider@gmail.com</p>
+
+                <h2>Plano <span>Gold</span></h2>
+
+            </div>
+
+            <!-- ENDEREÇO -->
+            <p class="endereco">
+                Endereço para entregas: Rua Margarida, número 17
+            </p>
+
+        </section>
+
+        <!-- CARD DE ATALHOS -->
+        <section class="card-atalhos">
+
+            <a href="notinhas.html">Notinhas</a>
+
+            <a href="cashback.html">Cashback</a>
+
+            <a href="#">Favoritos</a>
+
+            <a href="ajuda.html">ⓘ Suporte</a>
+
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
